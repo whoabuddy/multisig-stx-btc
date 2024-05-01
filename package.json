@@ -10,7 +10,8 @@
     "build": "npm run clean && npm run build-libs && npm run copy",
     "clean-distribute": "rm -rf webscript-multisig-stx-btc/ && rm -f webscript-multisig-stx-btc.zip",
     "distribute": "npm run clean-distribute && npm run build && npm run distribute-finish",
-    "distribute-finish": "cp -r dist/ webscript-multisig-stx-btc/ && zip webscript-multisig-stx-btc.zip -r webscript-multisig-stx-btc/"
+    "distribute-finish": "cp -r dist/ webscript-multisig-stx-btc/ && zip webscript-multisig-stx-btc.zip -r webscript-multisig-stx-btc/",
+    "postinstall": "cd node_modules/blockstack-trezor && npm install && npm run build"
   },
   "author": "",
   "license": "MIT",
