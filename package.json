@@ -14,13 +14,13 @@
   },
   "author": "",
   "license": "MIT",
-  "repository": "github:hirosystems/multisig-stx-btc",
+  "repository": "github:whoabuddy/multisig-stx-btc",
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
     "bigi": "^1.4.2",
     "bitcoinjs-lib": "^4.0.2",
     "blockstack": "18.1.6",
-    "blockstack-trezor": "^0.10.0",
+    "blockstack-trezor": "github:whoabuddy/blockstack-trezor-signer#master",
     "browserify": "^16.2.2",
     "buffer": "^6.0.3",
     "c32check": "0.0.6"
